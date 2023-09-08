@@ -30,6 +30,7 @@ body {
   transition: transform 0.5s;
 }
 
+/* De button moet je vasthouden voor een seconden, dus niet snel klikken!*/
 .flip-card:has(button:focus) .flip-card-inner {
   transform: rotateY(180deg);
 }
