@@ -1,6 +1,9 @@
-const expandButton = document.querySelector('header button')
-expandButton.addEventListener('click', expand)
+var init = function() {
+  var card = document.getElementById('card');
 
-function expand () {
-  document.body.classList.toggle('expand')
-}
+  document.getElementById('flip').addEventListener('click', function() {
+    card.toggleClassName('flipped');
+  }, false);
+};
+
+window.addEventListener('DOMContentLoaded', init, false);

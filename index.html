@@ -5,55 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FDND Visitekaartje</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kermesse" rel="stylesheet">
+                
   </head>
+
   <body>
     
-    <article>
-      
-      <header>
-        
-        <h1>Ilona van Oosbree</h1>
-        
-        <p><em>Upcoming Frontend Developer</em></p>
-        
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="pink" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
-      <img src="assets/creative-coder.png" alt="" width="800" height="800">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="wrapper">
+              <form action=""> 
+                <h1>Login</h1>
+                <div class="input-box">
+                  <input type="Ilona" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                  <input type="admin" placeholder="Password" required>
+                </div>
 
-      <dl>
-        <dt>HTML</dt>
-        <dd>🏆</dd>
-        
-        <dt>CSS</dt>
-        <dd>🏆</dd>
-        
-        <dt>JavaScript</dt>
-        <dd>🏆</dd>
-      </dl>
-  
-      <p>Het WEB is te gek! <br> Met HTML, CSS en JavaScript kan ik vette, interactieve web apps maken.</p>
-      
-    </article>
+                <div class="remember-forgot">
+                  <label><input type="checkbox"> Remember me
+                  </label>
+                </div>
 
-    <script src="scripts/script.js"></script>
-    
+                <button type="submit" class="btn">Log in</button>
+              </form>  
+            </div>
+          </div>
+            <div class="flip-card-back">
+              <div class="profile-container">
+                <div class="profile-picture">
+                  <h1> Ilona van Oosbree</h1>
+                  <div class="bio">
+                    Text, enter here
+                  </div>
+                  <h2> Achievements</h2>
+                  <div class="achievements">
+                    <div class="achievement">
+                      <div class="achievements-icon"></div> 
+                      <img src="laptop-icon2.png">
+                      <div class="achievenment-description"> Achievenment 1</div>
+                    </div>
+                    <div class="achievement">
+                      <div class="achievements-icon"></div>
+                      <img src="hike-icon.png">
+                      <div class="achievenment-description"> Achievenment 2</div>
+                    </div>
+                    <div class="achievement">
+                      <div class="achievements-icon"></div>
+                      <div class="achievenment-description"> Achievenment 3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
   </body>
+
 </html>
