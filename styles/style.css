@@ -132,13 +132,17 @@ body {
 }
 
 .profile-container {
-  color: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: left;
+ color: #fff;
 }
 
 .profile-picture h1 {
   border-radius: 50%;
   width: 300px;
-  height: 150px;
+  height: 40px;
   margin: 0 auto 20px;
   text-align: center;
   color: #fff;
@@ -155,6 +159,7 @@ body {
   font-size: 16px;
   margin-bottom: 20px;
   color: #fff;
+
 }
 
 .achievements h2 {
@@ -163,20 +168,23 @@ body {
 }
 
 .achievements {
-  margin-bottom: 10px;
-  background: #fff;
+  width: 23rem;
+  height: 8rem;
+  background: #858585;
   text-align: right;
+  padding-right: 20px;
+  border-radius: 10px;
 }
 
-.achievenment-icon {
+.achievement {
+  height: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  position: center;
+}
+
+.achievements-icon {
   width: 30px;
   height: 30px;
-  display: inline-block;
-  background-color: #fff;
   border-radius: 50%;
-  margin-right: 10px;
-}
-
-.achievement-description {
-  display: inline-block;
 }
